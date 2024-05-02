@@ -73,15 +73,29 @@ Für die Schaltung werden zwei verschiedene Spannungen benötigt. 12V für die M
 Um die Schrittmotoren ordnungsgemäß bedienen zu können bedarf es an einem Motortreiber für jeden Motor. Um diese Treiber richtig verwenden zu können müssen sie richtig verkabelt werden. Diesen vergleichsweise komplexen Schaltkreis hatte ich zu beginn des Projektes noch wie alle anderen Platinen von Hand gelötet. Als ich jedoch schließlich von "a4988" Treibern auf "drv8825" Treiber gewelchselt bin, musste ich eine Änderung an dem Schaltkreis vornehmen. Da die Platine nicht besonders gut verlötet war, ich nicht mit der Steckerpostition zufrieden war und die Rückseite der Platine bereits sehr unordentlich geworden ist, entschied ich mich für eine neue Platine. Um den Service zu testen und mir gleichzeitg das Löten zu sparen designte ich die Platine digital und ließ sie von einem Online Service herstellen. Das Ergebniss ist deutlich professioneller und weniger anfällig für Schäden als eine von Hand gelötete Platine.
 <br>
 <br>
-<img src = "images/circuitboard_01.png" height = 350>
-<img src = "images/circuitboard_02.png" height = 350>
+<img src = "images/circuitboard_01.png" height = 300>
+<img src = "images/circuitboard_02.png" height = 300>
 
 ### Knöpfe
 Der Roboter muss während des Robocup Wettbewerbes mehrfach von der Fahrbahn genommen werden und an einer anderen Stelle neu gestartet werden. Um den Roboter zu starten und zu stoppen bedarf es eine Möglichkeit für Manuelle Inputs, da der Roboter während des Wettbewerbes nicht über WLAN verbunden sein darf. Aus diesem Grund befinden sich an der Rückseite des Roboters zwei Knöpfe für mögliche Eingaben und zwei LEDs zur Statusanzeige. 
 <br>
 <br>
-<img src = "images/circuitboard_03.png" width = 800>
-<img src = "images/circuitboard_04.png" width = 800>
+<img src = "images/circuitboard_03.png" width = 600>
+<img src = "images/circuitboard_04.png" width = 600>
+
+### Verteiler
+Damit die Einzelnen Teile des Roboters einfach und schnell zu verkabeln, empfielt es sich breite Stecker zu verwenden, sodass jeweils nur ein Kabelstrang eingesteckt werden muss. Um die Signale auf die richtigen Kabel zu leiten gibt es eine Verteilerplatine, welche sich unter dem Raspberry Pi befindet. Mit ihr ist sowohl die obere Hälfte des Roboters als auch die abnehmbahre Heckplatte verbunden. 
+<br>
+<br>
+<img src = "images/circuitboard_06.png" height = 150>
+<img src = "images/circuitboard_05.png" height = 150>
+ 
+ ### Servo Motoren
+An der operen Hälfte des Roboters befinden sich fünf Servo Motoren sowie einen Lüfter. Um diese Bauteile korrekt zu verbinden und dabei nur einen Stecker zu verwenden wird ebenfalls eine Platine verwendet. 
+<br>
+<br>
+<img src = "images/circuitboard_08.png" height = 150>
+<img src = "images/circuitboard_07.png" height = 150>
 
 
 ## Das Fahrwerk
