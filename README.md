@@ -52,7 +52,13 @@ Als wir schließlich mit dem Roboter angetreten sind, versagte er vollkommen auf
 <img src="images/Hyperion_v1_gif2.gif" height = 300>
 <img src="images/Hyperion_v1_06.png" height = 300>
 
+<br>
+<br>
+<br>
+
 # Planung Hyperion v2
+<br>
+
 ## Platinen
 Statt einem Arduino Mega soll nun ein Raspberry Pi verwendet werden. Dieser ermöglicht es eine Kamera zu verwenden um die Kugeln zu finden. Zudem ermöglicht er durch mehrere Cores das Nutzen von Multiprocessen. Zudem kann der Roboter nun kabellos Programmiert werden und ist insgesamt Leistungfähiger. Damit der Roboter einfach auseinandergebaut werden kann bedarf es mehrer Platinen, welche verschiedene Aufgaben erfüllen. Diese Platinen sind wiederum mit angesteckten Kabeln verbunden. Somit sind keine Bauteile permanent mit einander verbunden und lassen sich leicht zerlegen. 
 
@@ -91,7 +97,7 @@ Damit die Einzelnen Teile des Roboters einfach und schnell zu verkabeln, empfiel
 <img src = "images/circuitboard_05.png" height = 150>
  
  ### Servo Motoren
-An der operen Hälfte des Roboters befinden sich fünf Servo Motoren sowie einen Lüfter. Um diese Bauteile korrekt zu verbinden und dabei nur einen Stecker zu verwenden wird ebenfalls eine Platine verwendet. 
+An der operen Hälfte des Roboters befinden sich fünf Servo Motoren sowie einen Lüfter. Um diese Bauteile korrekt zu verbinden und dabei nur einen Stecker zu verwenden wird ebenfalls eine Platine verwendet. Zudem befindet sich an dieser Platine ein weiterer Stecker um zwei helle LEDs an der Vorderseite des Roboters mit Strom zu versorgen.
 <br>
 <br>
 <img src = "images/circuitboard_08.png" height = 150>
@@ -114,4 +120,20 @@ Eine große Änderung des Roboters ist das Gehäuse. Es bietet den Grundstein f�
 <img src = "images/Hyperion_v2_06.png" height = 300>
 <img src = "images/Hyperion_v2_04.png" width = 800>
 <img src = "images/Hyperion_v2_05.png" width = 800>
+
+
+## Die Kamera 
+ Die Kamera soll beim befahren des Kurses senkrecht nach unten gerichtet sein um mögliche Kreuzungen zu erkennen. Wenn der Roboter jedoch die entsprechende Makierung überfährt muss die Kamera nach vorne gerichtet werden, damit die Kugeln von dem Roboter gefunden und aufgesammelt werden können. Um den Komplikationen eines doppelten Kamerasystems aus dem Weg zu gehen, wird eine enzelne kamera mit Hilfe eines Servo Motors in die Richtige Position gedreht. Damit die Ausrichtung stimmt werden zudem mehrere Zahnräder genutzt. 
 <br>
+<br>
+<img src = "images/cameramount_01.png" width = 740>
+<br>
+<img src = "images/cameramount.gif" height = 300>
+<img src = "images/cameramount_02.png" height = 300>
+
+## Schleifkontate
+Damit der Roboter überhaubt Kugeln finden und später einsammeln kann, muss er zuerst die "Rescue Area" finden. Diese beginnt mit einem silbernen Streifen auf der Fahrbahn. Da das Erkennen von Reflektieren von refelktierenden Oberflächen sowohl für die Sensoren als auch für die Kamera zu Komplikationen führen kann, macht der Roboter von einer weiteren (vermutlich unbeabsichtlichen) Eigenschaft des Streifens gebrauch. Der silberne Streifen leitet Strom und kann daher mit zwei Schleifkontakten erfasst werden. Danach kann sich der Roboter mit Hilfe der Kamera und des Ultraschall-Sensors in der "Rescue Area" zurechtfinden. 
+<br>
+<br>
+<img src = "images/schleifkontakt.gif" height = 200>
+<img src = "images/schleifkontakt.png" height = 200>
