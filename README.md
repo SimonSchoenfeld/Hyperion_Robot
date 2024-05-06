@@ -137,3 +137,12 @@ Damit der Roboter überhaubt Kugeln finden und später einsammeln kann, muss er 
 <br>
 <img src = "images/schleifkontakt.gif" height = 200>
 <img src = "images/schleifkontakt.png" height = 200>
+
+## Greifarm
+Um die Kugeln in der Rescue Area aufsammeln zu können benötigt der Roboter einen Greifarm. Dieser befindet sich während der normalen Fahrt oben auf dem Roboter. Er kann bei Bedarf kann der Greifarm dann heruntergeklappt werden und eine Kugel hochheben. Die Kugel wird dabei in eine Ladefläche gelegt, welche sich ebenfalls auf dem Roboter befindet. In dieser Ladefläche ist Platz bis zu vier Kugeln und sie kann nach hinten weg entleert werden. So kann auch die 6cm hohe Wand der roten und grünen Ecken überwunden werden, zu denen die Kugeln gebracht werden müssen. 
+<br>
+<br>
+<video height = "300" controls>
+    <source src = "images/ball_collect.mp4" type= "video/mp4">
+</video>
+<img src = "images/greifarm.png" height = 300>
