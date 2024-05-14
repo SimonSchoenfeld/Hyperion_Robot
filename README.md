@@ -144,3 +144,15 @@ Um die Kugeln in der Rescue Area aufsammeln zu können benötigt der Roboter ein
 <br>
 <img src = "images/ball_collect.gif" height = 300>
 <img src = "images/greifarm.png" height = 300>
+
+
+# Programierung
+
+## Linefollowing mit Lego Robotern
+Der wohl einfachste Teil der Programmierung ist der des Linefollowing. Üblicherweise verläuft das Folgen der Linie bei den Legorobotern nach einem bestimmten Prinzip. Sie besitzen einen Farbsensor links und einen rechts neben der Linie. Steht der Roboter gerade auf der Linie erkennt keiner der beiden Sensoren die Schwaze Spur und der Roboter fährt geradeaus. Macht die Linie nun eine Kurve oder kommt der Roboter vom Weg ab, erkennt das der jewalige Sensor und der Roboter kann seine Position korrigieren. Dieses Verfahren ist simple, kann jedoch trotzdem zu Fehlern führen. Ein Fehler den man so gut wie jedes Jahr beim Robocup Wettbewerb sehen kann, ist dass sich der Roboter ungünstig dreht und in eine Endlosschleife von Linie links und Linie rechts verfällt. Zudem gibt es immer wieder Probleme mit der Bewältigung von Rechten Winkeln, da die Roboter oft nicht schnell genug reagieren. 
+
+## Linefollowing des Hyperion Roboters
+Der Hyperion Roboter hat im Vergleich zu den Lego Robotern den Vorteil, dass er eine deutlich höhre Anzahl von Sensoren nutzen kann. Unter dem Roboter befinden sich also nicht nur zwei sondern gleich zwölf Graustufensensoren welche die Linie in einem großen Bereich erfassen können. Dies verhindert zum einen, dass der Roboter die Linie verliert und ermöglicht es, dass der Roboter seine Geschwindigkeit gleichmäßig zur Linienposition anpassen kann. 
+
+### Sensoren:
+Die zwölf Grayscale Sensoren geben jeweils einen Analogen Wert aus. Dieser ist besonders hoch wenn der Sensor auf eine dunkle Fläche gerichtet ist. Andersherum ist der Wert niedrig, wenn der Sensor auf eine helle Fläche gerichtet ist. Die Genzwerte für dei weiße Fahrbahn und die Schwarze Linie sind allerdings variable und abhängig von der Beleuchtung des Raumes (und somit auch von der Tageszeit). Aus diesem Grund ist eine Kalibrierung notwendig. Diese Kalibrirung ist sehr simple: jedem sensor wird ein Minimalwert und ein Maximalwert zugewiesen. Während der Kalibrierung werden innerhalb weniger Sekunden und während sich der Roboter über die Linie dreht, mehere hundert Werte erfasst, an denen die Minimal und Maximalwerte angepasst werden. Da sich die Werte von Weiß und Schwarz deutlich unterscheiden lässt sich als Grenzwert die Mitte des Minimal- und Maiximalwerts definieren. Alles über diesem Wert wird als True (Line), alles darunter als False (keine Linie) definiert. Diese Methode funktioniert auch bei ausgibigen Tests und veränderungen der Lichtverhältnisse sehr zuverlässig. 
