@@ -213,7 +213,7 @@ Durch das Hyperion Projekt habe ich extrem viel neues gelernt in Bereichen wie:
 
 Auch wenn der Roboter unter den Letzen Plätzen des Wettbewerbes abgeschnitten hat, würde ich das Projekt allein schon aus diesem Grund jederzeit wiederholen.
 
->[!NOTE] Sollte jemand Interesse an Weiteren Dateien, Teilelisten oder Infos haben, stelle ich das Gerne zur Verfügung. 
+[!NOTE] Sollte jemand Interesse an Weiteren Dateien, Teilelisten oder Infos haben, stelle ich das Gerne zur Verfügung. 
 
 ## Zusätzliche Ressourcen
 
