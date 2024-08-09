@@ -220,4 +220,4 @@ Auch wenn der Roboter unter den Letzen Plätzen des Wettbewerbes abgeschnitten h
 
 - [vollständige Konstruktionszeichnung](assets/Zeichnung.pdf)
 - [ansehbares 3D Modell](https://a360.co/3U4IwDF)
-- [STL Dateien](assets/3D-model)
+- [STL Dateien](assets/3d-model)
