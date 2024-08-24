@@ -1,6 +1,6 @@
 # Hyperion Roboter
-<img src="images/Hyperion_v2_01.png" width = 600>
-<br>
+<img src="images/Hyperion_v2_01.png" height = 400>
+
 <br>
 Dieses Repository enthält die Dokumentation des Hyperion Roboters, <br>
 welcher von Simon Schönfeld für den Robocup Rescue Line Wettbewerb 2024 gebaut wurde. 
@@ -136,7 +136,7 @@ Eine große Änderung des Roboters ist das Gehäuse. Es bietet den Grundstein f�
 <img src = "images/Hyperion_v2_02.png" height = 300>
 <img src = "images/Hyperion_v2_06.png" height = 300>
 <img src = "images/Hyperion_v2_04.png" width = 800>
-<img src = "images/Hyperion_v2_05.png" width = 800>
+<img src="images/Hyperion_v2_opened.png" width = 800>
 
 ## Die Kamera 
  Die Kamera soll beim Befahren des Kurses senkrecht nach unten gerichtet sein, um mögliche Kreuzungen zu erkennen. Wenn der Roboter jedoch die entsprechende Maskierung überfährt, muss die Kamera nach vorne gerichtet werden, damit die Kugeln von dem Roboter gefunden und aufgesammelt werden können. Um den Komplikationen eines doppelten Kamerasystems aus dem Weg zu gehen, wird eine einzelne Kamera mit Hilfe eines Servo Motors in die Richtige Position gedreht. Damit die Ausrichtung stimmt werden zudem mehrere Zahnräder genutzt. 
